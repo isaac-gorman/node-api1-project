@@ -17,9 +17,9 @@
 
 Use Node.js and Express to build an API that performs CRUD operations on users.
 
-- Add a `.gitignore` file appropriate for `node.js` projects.
-- Add a new `package.json`.
-- Add a `server` script to `package.json` that runs the API using `nodemon`.
+<!-- - Add a `.gitignore` file appropriate for `node.js` projects. -->
+<!-- - Add a new `package.json`. -->
+<!-- - Add a `server` script to `package.json` that runs the API using `nodemon`. -->
 
 ### Write endpoints
 
@@ -47,7 +47,7 @@ Each User _resource_ should conform to the following structure (AKA schema):
 
 #### Endpoint Specifications
 
-When the client makes a `POST` request to `/api/users`:
+<!-- When the client makes a `POST` request to `/api/users`:
 
 - If the request body is missing the `name` or `bio` property:
 
@@ -56,21 +56,21 @@ When the client makes a `POST` request to `/api/users`:
 
 - If the information about the _user_ is valid:
 
-  - save the new _user_ the the database.
+  - save the new _user_ to the database.
   - respond with HTTP status code `201` (Created).
   - return the newly created _user document_.
 
 - If there's an error while saving the _user_:
   - respond with HTTP status code `500` (Server Error).
-  - return the following JSON object: `{ errorMessage: "There was an error while saving the user to the database" }`.
+  - return the following JSON object: `{ errorMessage: "There was an error while saving the user to the database" }`. -->
 
-When the client makes a `GET` request to `/api/users`:
+<!-- When the client makes a `GET` request to `/api/users`:
 
 - If there's an error in retrieving the _users_ from the database:
   - respond with HTTP status code `500`.
-  - return the following JSON object: `{ errorMessage: "The users information could not be retrieved." }`.
+  - return the following JSON object: `{ errorMessage: "The users information could not be retrieved." }`. -->
 
-When the client makes a `GET` request to `/api/users/:id`:
+<!-- When the client makes a `GET` request to `/api/users/:id`:
 
 - If the _user_ with the specified `id` is not found:
 
@@ -79,9 +79,9 @@ When the client makes a `GET` request to `/api/users/:id`:
 
 - If there's an error in retrieving the _user_ from the database:
   - respond with HTTP status code `500`.
-  - return the following JSON object: `{ errorMessage: "The user information could not be retrieved." }`.
+  - return the following JSON object: `{ errorMessage: "The user information could not be retrieved." }`. -->
 
-When the client makes a `DELETE` request to `/api/users/:id`:
+<!-- When the client makes a `DELETE` request to `/api/users/:id`:
 
 - If the _user_ with the specified `id` is not found:
 
@@ -90,8 +90,8 @@ When the client makes a `DELETE` request to `/api/users/:id`:
 
 - If there's an error in removing the _user_ from the database:
   - respond with HTTP status code `500`.
-  - return the following JSON object: `{ errorMessage: "The user could not be removed" }`.
-
+  - return the following JSON object: `{ errorMessage: "The user could not be removed" }`. -->
+<!--
 When the client makes a `PUT` request to `/api/users/:id`:
 
 - If the _user_ with the specified `id` is not found:
@@ -113,8 +113,8 @@ When the client makes a `PUT` request to `/api/users/:id`:
 
   - update the user document in the database using the new information sent in the `request body`.
   - respond with HTTP status code `200` (OK).
-  - return the newly updated _user document_.
-  
+  - return the newly updated _user document_. -->
+
 ### Task 2b: Exit Ticket
 
 Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/Enw3XXyb7poZ6WTpy/pXE64R7ExgXbto).
@@ -137,5 +137,6 @@ Create a new React application and connect it to your server:
 - Style the list of users however you see fit.
 
 ## Submission Format
-* [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
-* [ ] Fill out your module retrospective form [here](https://forms.lambdaschool.com/module-retrospective) with a link to your PR
+
+- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
+- [ ] Fill out your module retrospective form [here](https://forms.lambdaschool.com/module-retrospective) with a link to your PR
